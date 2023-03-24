@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bs/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <title>Eventos JS</title>
+</head>
+<body>
+    <main class="container p-3">
+        <section class="container-flex d-flex justify-content-center p-3">
+            <form action="" class="border w-50 p-4">
+                <div class="my-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input name="nome" type="text" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input name="email" type="email" class="form-control">
+                </div>
+                <div class="my-3">
+                    <label for="senha" class="form-label">Senha:</label>
+                    <input id="senha" name="senha" type="password" class="form-control form-control-color" onchange="guardarSenha()">
+                    <button name="btn_mostrar_senha" class="btn btn-primary" onmousedown="mostrarSenha()">mostrar</button>
+                </div>
+                <div class="my-3">
+                    <label for="confirmar_senha" class="form-label">Confirmar Senha:</label>
+                    <input id="confirmar_senha" name="confirmar_senha" type="password" class="form-control form-control-color" onkeyup="confirmarSenha()">
+                    <div id="validacao"></div>
+                </div>
+                <div class="my-3 row">
+                    <div class="my-3 col">
+                        <label for="telefone" class="form-label">Telefone:</label>
+                        <input name="telefone" type="text" class="form-control">
+                    </div>
+                    <div class="my-3 col">
+                        <label for="nascimento" class="form-label">Nascimento:</label>
+                        <input name="nascimento" type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="my-3">
+                    <input type="submit" name="btn_enviar" class="btn btn-primary" value="Enviar">
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

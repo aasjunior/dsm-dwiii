@@ -1,0 +1,15 @@
+.header{
+    width: 100vw;
+    flex-direction: column;
+}
+    .header__nav{
+        width: 100vw;
+        text-transform: uppercase;
+        justify-content: space-around;
+    }
+
+    .header__nav-items{
+        width: 50vw;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
